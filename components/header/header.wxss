@@ -1,0 +1,36 @@
+/* components/header/header.wxss */
+
+.m-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  background-color: #fff;
+}
+
+.placeHolder {
+  background-color: #fff;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20rpx;
+}
+
+.nav-user {
+  font-size: 22rpx;
+  font-weight: bold;
+  padding: 0 36rpx;
+}
+
+.nav-title {
+  font-size: 30rpx;
+  font-weight: bold;
+}
+
+.nav-user_invisible {
+  visibility: hidden;
+}

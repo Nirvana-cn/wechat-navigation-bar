@@ -1,0 +1,4 @@
+<view class="wrapper">
+  <header class="header"></header>
+  <view class="body">body</view>
+</view>

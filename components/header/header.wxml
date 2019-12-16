@@ -1,0 +1,9 @@
+<view class="m-header">
+  <view class="placeHolder" style="height:{{placeHolderHeight}}px"></view>
+  <view class="nav" style="height:{{titleHeight}}px">
+    <view class="nav-user" bindtap="openUserCenter">用户中心</view>
+    <view class="nav-title">{{title}}</view>
+    <view class="nav-user nav-user_invisible">用户中心</view>
+  </view>
+</view>
+<view style="width:100%;height:{{totalHeight}}px;text-align:center;background-color:#faa">下拉刷新</view>
