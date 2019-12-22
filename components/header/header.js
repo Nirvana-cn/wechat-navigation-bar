@@ -19,7 +19,7 @@ Component({
    */
   data: {
     desc: '用户中心',
-    placeHolderHeight: '',
+    statusBarHeight: '',
     titleHeight: '',
     totalHeight: ''
   },
@@ -58,15 +58,15 @@ Component({
   lifetimes: {
     attached: function() {
       let systemInfo = wx.getSystemInfoSync();
-      let placeHolderHeight = systemInfo.statusBarHeight;
+      let statusBarHeight = systemInfo.statusBarHeight;
       let titleHeight = DEFAULT_ANDROID_HEIGHT;
       if (this.isApplePhone(systemInfo.model)) {
         titleHeight = DEFAULT_APPLE_HEIGHT;
       }
       this.setData({
-        placeHolderHeight,
+        statusBarHeight,
         titleHeight,
-        totalHeight: Number.parseInt(placeHolderHeight) + Number.parseInt(titleHeight)
+        totalHeight: Number.parseInt(statusBarHeight) + Number.parseInt(titleHeight)
       });
     }
   }
